@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects | Daniea Jamal</title>
+  <meta name="description" content="Browse web projects by me. Search by title or filter by technology.">
+  <link rel="icon" href="me.jpg" type="image/jpeg"> 
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main">
+      <a class="brand" href="index.html">Daniea Jamal</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="projects.html" aria-current="page">Projects</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <button type="button" class="btn btn-outline btn-small" id="theme-toggle" aria-pressed="false">Dark mode</button>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="container" aria-labelledby="projects-title">
+      <h1 id="projects-title">Projects</h1>
+      <p class="muted">Search by title or technology, or filter by one technology.</p>
+
+      <div class="filters">
+        <div class="field">
+          <label for="search">Search projects</label>
+          <input type="search" id="search" placeholder="e.g. weather or CSS">
+        </div>
+        <div class="field">
+          <label for="tech-filter">Technology</label>
+          <select id="tech-filter">
+            <option value="all">All technologies</option>
+          </select>
+        </div>
+      </div>
+
+      <p id="result-count" aria-live="polite"></p>
+      <p id="empty-message" class="empty" hidden>No projects found</p>
+      <div id="project-grid" class="card-grid"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Daniea Jamal</p>
+      <ul class="footer-links">
+        <li><a href="https://github.com/daniea-dev" rel="noopener">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/daniea-jamal" rel="noopener">LinkedIn</a></li>
+        <li><a href="s2024266175@umt.edu.pk">Email</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
