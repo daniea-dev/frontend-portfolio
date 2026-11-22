@@ -2,7 +2,7 @@
 
 CS-554 Advanced Web Technologies, Assignment 1 (Version A).
 
-**Live site:** https://your-username.github.io/your-repo/
+**Live site:** https://daniea-dev.github.io/frontend-portfolio/
 
 ![Screenshot of the portfolio](screenshot.png)
 
