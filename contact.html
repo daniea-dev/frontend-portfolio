@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Daniea Jamal</title>
+  <meta name="description" content="Get in touch with me about internships, projects or collaboration.">
+  <link rel="icon" href="me.jpg" type="image/jpeg">
+    <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main">
+      <a class="brand" href="index.html">Daniea Jamal</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+      </div>
+      <button type="button" class="btn btn-outline btn-small" id="theme-toggle" aria-pressed="false">Dark mode</button>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="container" aria-labelledby="contact-title">
+      <h1 id="contact-title">Contact me</h1>
+      <p class="muted">All fields are required.</p>
+
+      <form id="contact-form" class="form" novalidate>
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required minlength="3" autocomplete="name" aria-describedby="name-error">
+          <p class="error" id="name-error"></p>
+        </div>
+
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required autocomplete="email" aria-describedby="email-error">
+          <p class="error" id="email-error"></p>
+        </div>
+
+        <div class="field">
+          <label for="subject">Subject</label>
+          <select id="subject" name="subject" required aria-describedby="subject-error">
+            <option value="">Choose a subject</option>
+            <option value="internship">Internship opportunity</option>
+            <option value="project">Project collaboration</option>
+            <option value="feedback">Feedback</option>
+            <option value="other">Other</option>
+          </select>
+          <p class="error" id="subject-error"></p>
+        </div>
+
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required minlength="20" aria-describedby="message-error"></textarea>
+          <p class="error" id="message-error"></p>
+        </div>
+
+        <fieldset aria-describedby="source-error">
+          <legend>How did you hear about me?</legend>
+          <div class="radio-row"><input type="radio" id="src-linkedin" name="source" value="linkedin" required><label for="src-linkedin">LinkedIn</label></div>
+          <div class="radio-row"><input type="radio" id="src-github" name="source" value="github"><label for="src-github">GitHub</label></div>
+          <div class="radio-row"><input type="radio" id="src-friend" name="source" value="friend"><label for="src-friend">A friend</label></div>
+          <p class="error" id="source-error"></p>
+        </fieldset>
+
+        <div class="field">
+          <div class="check-row">
+            <input type="checkbox" id="consent" name="consent" required aria-describedby="consent-error">
+            <label for="consent">I agree to be contacted about my message.</label>
+          </div>
+          <p class="error" id="consent-error"></p>
+        </div>
+
+        <button type="submit" class="btn">Send message</button>
+        <p id="form-success" class="success" role="status" tabindex="-1" hidden></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Daniea Jamal</p>
+      <ul class="footer-links">
+        <li><a href="https://github.com/daniea-dev" rel="noopener">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/daniea-jamal" rel="noopener">LinkedIn</a></li>
+        <li><a href="s2024266175@umt.edu.pk">Email</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
